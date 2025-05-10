@@ -1,0 +1,57 @@
+Domain parsed
+Problem parsed
+Grounding..
+Grounding Time: 29
+Aibr Preprocessing
+UFX:false
+|F|:33
+|X|:0
+|A|:27
+|P|:0
+|E|:0
+Numeric Error for Complex Condition Activated
+H1 Setup Time (msec): 16
+h(I):15.0
+f(n) = 15.0 (Expanded Nodes: 1, Evaluated States: 1, Time: 0.01) Frontier Size: 0
+f(n) = 16.0 (Expanded Nodes: 2, Evaluated States: 8, Time: 0.029) Frontier Size: 6
+f(n) = 17.0 (Expanded Nodes: 5, Evaluated States: 15, Time: 0.032) Frontier Size: 10
+f(n) = 18.0 (Expanded Nodes: 10, Evaluated States: 15, Time: 0.033) Frontier Size: 5
+f(n) = 19.0 (Expanded Nodes: 20, Evaluated States: 24, Time: 0.036) Frontier Size: 4
+f(n) = 20.0 (Expanded Nodes: 21, Evaluated States: 26, Time: 0.037) Frontier Size: 5
+f(n) = 21.0 (Expanded Nodes: 34, Evaluated States: 49, Time: 0.041) Frontier Size: 15
+f(n) = 22.0 (Expanded Nodes: 48, Evaluated States: 94, Time: 0.047) Frontier Size: 46
+Problem Solved
+
+Found Plan:
+0.0: (arriva-aeroporto p0)
+1.0: (assegna-postazione check1 personale1)
+2.0: (vai-checkin p0 check1 personale1)
+3.0: (consegna-bagaglio-stiva p0 check1 personale1)
+4.0: (verifica-documenti-viaggio p0 check1 personale1)
+5.0: (libera-postazione check1 personale1)
+6.0: (assegna-postazione security1 personale1)
+7.0: (vai-sicurezza p0 security1 personale1)
+8.0: (controllo-sicurezza p0 security1 personale1)
+9.0: (libera-postazione security1 personale1)
+10.0: (assegna-postazione passport1 personale1)
+11.0: (vai-controllo-passaporto p0 passport1 personale1)
+12.0: (passa-controllo-passaporto p0 passport1 personale1)
+13.0: (entra-airside p0)
+14.0: (assegna-gate-internazionale p0 gate_internazionale)
+15.0: (controllo-gate-info p0 gate_internazionale)
+16.0: (libera-postazione passport1 personale1)
+17.0: (vai-gate p0 gate_internazionale)
+18.0: (assegna-postazione gate_internazionale personale1)
+19.0: (aspetta-gate p0 gate_internazionale)
+20.0: (controllo-finale-documenti p0 gate_internazionale personale1)
+21.0: (imbarco p0 gate_internazionale)
+
+Plan-Length:22
+Metric (Search):22.0
+Planning Time (msec): 52
+Heuristic Time (msec): 21
+Search Time (msec): 48
+Expanded Nodes:51
+States Evaluated:98
+Number of Dead-Ends detected:0
+Number of Duplicates detected:70
